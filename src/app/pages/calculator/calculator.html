@@ -1,0 +1,12 @@
+<div class="calculator-container">
+  <div class="calculator">
+    <input class="display" [value]="expression" readonly/>
+    <div class="button-grid">
+      <button (click)="onClear()">C</button>
+      @for (btn of buttons; track btn) {
+        <button (click)="press(btn)">{{ btn }}</button>
+      }
+      <button (click)="onCalculate()">=</button>
+    </div>
+  </div>
+</div>

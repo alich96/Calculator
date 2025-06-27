@@ -1,0 +1,31 @@
+.home-container {
+  text-align: center;
+  padding: 50px;
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .btn {
+      padding: 12px 24px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background-color: #43a047;
+      }
+
+      &:active {
+        background-color: #388e3c;
+      }
+    }
+  }
+}
