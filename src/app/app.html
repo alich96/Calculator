@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <a routerLink="/">
+    <img ngSrc="/alphabet-c.png" alt="Logo" class="navbar-logo" height="980" width="980"/>
+  </a>
+  <div class="nav-links">
+    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/calculator" routerLinkActive="active-link">Calculator</a>
+    <a routerLink="/about" routerLinkActive="active-link">About</a>
+  </div>
+</nav>
+
+<main class="main-container">
+  <router-outlet></router-outlet>
+</main>
